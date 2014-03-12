@@ -1,8 +1,6 @@
 
 var getRandomLetter = function () {
 	return String.fromCharCode(Math.floor((Math.random() * 0xFFFF)));
-	var letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghjiklmnopqrstuvwxyz,! ';
-	return letters.charAt(Math.floor((Math.random() * letters.length)));
 }
 
 var similarString = function (x, y) {
@@ -97,5 +95,5 @@ class MyGeneticAlgorithm{
 
 };
 
-var genAlgorithm = new MyGeneticAlgorithm("BlubberBlubberBlubberBlubberBlubberBlubberBlubberBlubberBlubberBlubberBlubberBlubberBlubber", 2000, 0);
+var genAlgorithm = new MyGeneticAlgorithm("Blubber", 2000, 0);
 genAlgorithm.run();
